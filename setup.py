@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import glob
 setup(
     name = 'zhuaxia',
-    version = '1.0.0',
+    version = '2.0.0',
     install_requires=[ 'requests','mutagen' ],
     packages = find_packages(),
     package_data={'zhuaxia':['conf/*.conf']},
