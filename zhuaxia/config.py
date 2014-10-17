@@ -6,11 +6,12 @@ import log, util
 import traceback
 
 
+HOME = path.expanduser('~')
 VERSION     = '2.1.1'                #software version
 #the separator of tmux command output
 PKG_PATH    = path.dirname(__file__)
 APP_PATH    = path.join(PKG_PATH,"../")
-USER_PATH   = path.join(os.getenv("HOME") , ".zhuaxia")
+USER_PATH   = path.join(HOME, ".zhuaxia")
 SAMPLE_CONF = path.join(PKG_PATH, 'conf','default.conf')
 CONF_FILE   = path.join(USER_PATH, "zhuaxia.conf")
 

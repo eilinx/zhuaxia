@@ -9,7 +9,8 @@ import random, string
 import HTMLParser
 
 #used by get_terminal_size
-import fcntl, termios, struct
+#import fcntl, termios, struct
+import struct
 
 def get_terminal_size(fd=1):
     """

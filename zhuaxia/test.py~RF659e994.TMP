@@ -6,6 +6,7 @@ import ConfigParser
 import traceback
 import util
 
+print(globals())
 HOME = os.path.expanduser("~")
 
 VERSION = '2.1.1'  # software version
@@ -84,6 +85,7 @@ def load_single_config(conf_parser, conf_key):
         if conf_key != 'xiami.proxy.http':
             log.warn(config_warn_msg %
                      (conf_key, str(globals()[var_dict[conf_key][0]])))
+    print(locals())
 
 
 def init_config():

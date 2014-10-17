@@ -9,4 +9,5 @@ dist/*.*
 *.egg-info/*.*
 thought/*.*
 .idea/
+*.TMP
 
